@@ -9,7 +9,7 @@
 #include <stdint.h>
 
 // FANN
-#include "fann.h"
+#include "floatfann.h"
 
 
 #if __cplusplus
@@ -17,7 +17,9 @@ extern "C"
 {
 #endif
 
-typedef fann*           net_ptr;
+
+// Type standardizations
+typedef struct fann*    net_ptr;
 typedef fann_type       float_t;
 typedef float_t*        float_ptr;
 typedef unsigned long   offset_t;
@@ -43,7 +45,7 @@ typedef unsigned long   flag_t;
 ///
 typedef struct NARXConfig
 {
-  offset_t  sig_len;              ///< length of a process signal block
+  offset_t  signal_len;           ///< length of a process signal block
   offset_t  input_len;            ///< length of a input block
   offset_t  order;                ///< number of delay input-layer delays
   offset_t  n_hidden_layers;      ///< Strictly : {1 or 2}
@@ -61,7 +63,7 @@ typedef struct NARXConfig
 ///
 typedef struct NARXNet
 {
-  net_ptr    network;               ///< Base Feedforward Neural Network (fann impl)
+  net_ptr   network;             ///< Base Feedforward Neural Network (fann impl)
 
   offset_t  network_order;
   offset_t  output_block_len;
@@ -69,18 +71,18 @@ typedef struct NARXNet
   offset_t  output_offset;
   offset_t  input_offset;
 
-  offset_t  output_buffer_len;      ///< length = (output_len)          
-  offset_t  input_buffer_len;       ///< length = (output_len+input_len)*order
+  offset_t  output_buffer_len;   ///< length = (output_len)          
+  offset_t  input_buffer_len;    ///< length = (output_len+input_len)*order
 
-  float_ptr    output_mean;         ///< Stores input output
-  float_ptr    input_mean;          ///< Stores input input
-  float_ptr    output_buffer;       ///< [\hat{O}_{k}]
-  float_ptr    output_buffer_prev;  ///< [\hat{O}_{k-1}]
-  float_ptr    output_buffer_diff;  ///< [\del\hat{O}_{k-1}]
+  float_ptr output_mean;         ///< Stores input output
+  float_ptr input_mean;          ///< Stores input input
+  float_ptr output_buffer;       ///< [\hat{O}_{k}]
+  float_ptr output_buffer_prev;  ///< [\hat{O}_{k-1}]
+  float_ptr output_buffer_diff;  ///< [\del\hat{O}_{k-1}]
 
-  float_ptr    input_buffer;        ///< [O_{k-1},U_{k-1},...,O_{k-N},U_{k-N}]
-  float_t    MSE;
-  float_t    MSE_prev;
+  float_ptr input_buffer;        ///< [O_{k-1},U_{k-1},...,O_{k-N},U_{k-N}]
+  float_t   MSE;
+  float_t   MSE_prev;
 } NARXNet_t;
 
 
@@ -115,7 +117,7 @@ void NARXNet_Update(
 );
 
 
-const float_ptr NARXNet_GetPrediction(NARXNet* net);
+const float_ptr NARXNet_GetPrediction(NARXNet_t* net);
 
 #if NARX_OPT_COMPUTE_MSE
 const float_t NARXNet_GetMSE(NARXNet_t* net);

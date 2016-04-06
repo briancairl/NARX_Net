@@ -1,4 +1,5 @@
 #include <math.h>
+#include <memory.h>
 #include "narxnet/narxnet.h"
 /// @todo Extend to a cascade network option
 /// @todo Extend to a space network option
@@ -83,7 +84,7 @@ const float_t NARXNet_GetMSE(NARXNet_t* net)
 #endif
 
 
-const float_ptr NARXNet_GetPrediction(NARXNet* net)
+const float_ptr NARXNet_GetPrediction(NARXNet_t* net)
 {
   return net->output_buffer;
 }
@@ -94,17 +95,17 @@ void NARXNet_Create(
   NARXConfig_t*  conf
 ){
   /// Compute Necessary Input Buffer Length
-  net->input_buffer_len  = ((conf->input_len+conf->sig_len) * conf->order);
+  net->input_buffer_len  = ((conf->input_len+conf->signal_len) * conf->order);
   
   /// Input-buffer Positional Information
   net->network_order    = conf->order;
   net->input_block_len  = conf->input_len;
-  net->output_block_len = conf->sig_len;
+  net->output_block_len = conf->signal_len;
   net->input_offset     = (0UL);
   net->output_offset    = (conf->input_len*conf->order);
 
   /// Compute Necessary Output Buffer Length
-  net->output_buffer_len= conf->sig_len;
+  net->output_buffer_len= conf->signal_len;
   
   /// Allocate Input Buffer + copy swap
   net->input_buffer      = (float_ptr)calloc(net->input_buffer_len,  sizeof(float_t));

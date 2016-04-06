@@ -74,7 +74,8 @@ extern "C"
 #ifndef NULL
 #define NULL 0
 #endif	/* NULL */
- 
+
+#include <math.h>
 /* ----- Macros used to define DLL external entrypoints ----- */ 
 /*
  DLL Export, import and calling convention for Windows.
