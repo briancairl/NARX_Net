@@ -1,0 +1,71 @@
+\hypertarget{struct_n_a_r_x_net}{\section{N\-A\-R\-X\-Net Struct Reference}
+\label{struct_n_a_r_x_net}\index{N\-A\-R\-X\-Net@{N\-A\-R\-X\-Net}}
+}
+
+
+Holds the N\-A\-R\-X network and all of its properties and support variables.  
+
+
+
+
+{\ttfamily \#include $<$narxnet.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_n_a_r_x_net_a8a9ba7086d06adec09cab2f884bc094a}{\hyperlink{structfann}{net\-\_\-ptr} \hyperlink{struct_n_a_r_x_net_a8a9ba7086d06adec09cab2f884bc094a}{network}}\label{struct_n_a_r_x_net_a8a9ba7086d06adec09cab2f884bc094a}
+
+\begin{DoxyCompactList}\small\item\em Base Feedforward Neural Network (fann impl) \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_a4d817ef94b1503cd6db611b900b91b26}{offset\-\_\-t {\bfseries network\-\_\-order}}\label{struct_n_a_r_x_net_a4d817ef94b1503cd6db611b900b91b26}
+
+\item 
+\hypertarget{struct_n_a_r_x_net_a01ee3305920322a34b93757808ef13f7}{offset\-\_\-t {\bfseries output\-\_\-block\-\_\-len}}\label{struct_n_a_r_x_net_a01ee3305920322a34b93757808ef13f7}
+
+\item 
+\hypertarget{struct_n_a_r_x_net_affec2577f520fdc6d244dee87bf543ac}{offset\-\_\-t {\bfseries input\-\_\-block\-\_\-len}}\label{struct_n_a_r_x_net_affec2577f520fdc6d244dee87bf543ac}
+
+\item 
+\hypertarget{struct_n_a_r_x_net_a97e4b7c187d589c7180a6a03a110065b}{offset\-\_\-t {\bfseries output\-\_\-offset}}\label{struct_n_a_r_x_net_a97e4b7c187d589c7180a6a03a110065b}
+
+\item 
+\hypertarget{struct_n_a_r_x_net_acb91dae135ff8dad169905cd29e0787b}{offset\-\_\-t {\bfseries input\-\_\-offset}}\label{struct_n_a_r_x_net_acb91dae135ff8dad169905cd29e0787b}
+
+\item 
+\hypertarget{struct_n_a_r_x_net_a8263dd2f5608cff58356ddb5586fce94}{offset\-\_\-t \hyperlink{struct_n_a_r_x_net_a8263dd2f5608cff58356ddb5586fce94}{output\-\_\-buffer\-\_\-len}}\label{struct_n_a_r_x_net_a8263dd2f5608cff58356ddb5586fce94}
+
+\begin{DoxyCompactList}\small\item\em length = (output\-\_\-len) \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_ab65456ccd9169e260ea84c3a955bc065}{offset\-\_\-t \hyperlink{struct_n_a_r_x_net_ab65456ccd9169e260ea84c3a955bc065}{input\-\_\-buffer\-\_\-len}}\label{struct_n_a_r_x_net_ab65456ccd9169e260ea84c3a955bc065}
+
+\begin{DoxyCompactList}\small\item\em length = (output\-\_\-len+input\-\_\-len)$\ast$order \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_a59b7c1428ec8f98e300d4a2fc2473dfa}{float\-\_\-ptr \hyperlink{struct_n_a_r_x_net_a59b7c1428ec8f98e300d4a2fc2473dfa}{output\-\_\-mean}}\label{struct_n_a_r_x_net_a59b7c1428ec8f98e300d4a2fc2473dfa}
+
+\begin{DoxyCompactList}\small\item\em Stores input output. \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_ae5f9c486b6e054e3f443592831912aa2}{float\-\_\-ptr \hyperlink{struct_n_a_r_x_net_ae5f9c486b6e054e3f443592831912aa2}{input\-\_\-mean}}\label{struct_n_a_r_x_net_ae5f9c486b6e054e3f443592831912aa2}
+
+\begin{DoxyCompactList}\small\item\em Stores input input. \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_a928aede8b09ed82869de7c1152286e8d}{float\-\_\-ptr \hyperlink{struct_n_a_r_x_net_a928aede8b09ed82869de7c1152286e8d}{output\-\_\-buffer}}\label{struct_n_a_r_x_net_a928aede8b09ed82869de7c1152286e8d}
+
+\begin{DoxyCompactList}\small\item\em \mbox{[}\{O\}\-\_\-\{k\}\mbox{]} \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_acbaab6607adef4c8ec9c427a918c9fc7}{float\-\_\-ptr \hyperlink{struct_n_a_r_x_net_acbaab6607adef4c8ec9c427a918c9fc7}{output\-\_\-buffer\-\_\-prev}}\label{struct_n_a_r_x_net_acbaab6607adef4c8ec9c427a918c9fc7}
+
+\begin{DoxyCompactList}\small\item\em \mbox{[}\{O\}\-\_\-\{k-\/1\}\mbox{]} \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_a298733c8544ca7cc7e889a9e87275b60}{float\-\_\-ptr \hyperlink{struct_n_a_r_x_net_a298733c8544ca7cc7e889a9e87275b60}{output\-\_\-buffer\-\_\-diff}}\label{struct_n_a_r_x_net_a298733c8544ca7cc7e889a9e87275b60}
+
+\begin{DoxyCompactList}\small\item\em \mbox{[}\{O\}\-\_\-\{k-\/1\}\mbox{]} \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_a718c4737d0db5e6e6bbc71b2a63804f4}{float\-\_\-ptr \hyperlink{struct_n_a_r_x_net_a718c4737d0db5e6e6bbc71b2a63804f4}{input\-\_\-buffer}}\label{struct_n_a_r_x_net_a718c4737d0db5e6e6bbc71b2a63804f4}
+
+\begin{DoxyCompactList}\small\item\em \mbox{[}O\-\_\-\{k-\/1\},U\-\_\-\{k-\/1\},...,O\-\_\-\{k-\/\-N\},U\-\_\-\{k-\/\-N\}\mbox{]} \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_net_af10a02ca889963a7f7f5c37155389ded}{float\-\_\-t {\bfseries M\-S\-E}}\label{struct_n_a_r_x_net_af10a02ca889963a7f7f5c37155389ded}
+
+\item 
+\hypertarget{struct_n_a_r_x_net_a40c18d483091fa9e08f29a83a2f3441f}{float\-\_\-t {\bfseries M\-S\-E\-\_\-prev}}\label{struct_n_a_r_x_net_a40c18d483091fa9e08f29a83a2f3441f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Holds the N\-A\-R\-X network and all of its properties and support variables. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/brian/source/\-N\-A\-R\-X\-\_\-\-Net/include/narxnet/narxnet.\-h\end{DoxyCompactItemize}

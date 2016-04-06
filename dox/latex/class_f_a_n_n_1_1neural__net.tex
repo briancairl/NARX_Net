@@ -1,0 +1,398 @@
+\hypertarget{class_f_a_n_n_1_1neural__net}{\section{neural\-\_\-net Class Reference}
+\label{class_f_a_n_n_1_1neural__net}\index{neural\-\_\-net@{neural\-\_\-net}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a3bd042682d99150e5f88ad0102982d48}{{\bfseries neural\-\_\-net} (const \hyperlink{class_f_a_n_n_1_1neural__net}{neural\-\_\-net} \&other)}\label{class_f_a_n_n_1_1neural__net_a3bd042682d99150e5f88ad0102982d48}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ac1df4a9456c5658ea3fcedeca05042e8}{{\bfseries neural\-\_\-net} (struct \hyperlink{structfann}{fann} $\ast$other)}\label{class_f_a_n_n_1_1neural__net_ac1df4a9456c5658ea3fcedeca05042e8}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aed7a1273df3d52e006286aa3e593e610}{void {\bfseries copy\-\_\-from\-\_\-struct\-\_\-fann} (struct \hyperlink{structfann}{fann} $\ast$other)}\label{class_f_a_n_n_1_1neural__net_aed7a1273df3d52e006286aa3e593e610}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a3a80b6032f86a56bec74609034b3246f}{void {\bfseries destroy} ()}\label{class_f_a_n_n_1_1neural__net_a3a80b6032f86a56bec74609034b3246f}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a76fd95298b82456a9724ad792b120743}{bool {\bfseries create\-\_\-standard} (unsigned int num\-\_\-layers,...)}\label{class_f_a_n_n_1_1neural__net_a76fd95298b82456a9724ad792b120743}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ad19f82c373464c91e6c95ab18ac20542}{bool {\bfseries create\-\_\-standard\-\_\-array} (unsigned int num\-\_\-layers, const unsigned int $\ast$layers)}\label{class_f_a_n_n_1_1neural__net_ad19f82c373464c91e6c95ab18ac20542}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_abdc8dc779c17c2736f89ae5cc7c6e20a}{bool {\bfseries create\-\_\-sparse} (float connection\-\_\-rate, unsigned int num\-\_\-layers,...)}\label{class_f_a_n_n_1_1neural__net_abdc8dc779c17c2736f89ae5cc7c6e20a}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a79ad6399ac33194c40497d593b5bbd7d}{bool {\bfseries create\-\_\-sparse\-\_\-array} (float connection\-\_\-rate, unsigned int num\-\_\-layers, const unsigned int $\ast$layers)}\label{class_f_a_n_n_1_1neural__net_a79ad6399ac33194c40497d593b5bbd7d}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ae9bddeafe1efda270491ab635d7802ad}{bool {\bfseries create\-\_\-shortcut} (unsigned int num\-\_\-layers,...)}\label{class_f_a_n_n_1_1neural__net_ae9bddeafe1efda270491ab635d7802ad}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_af25565fd427d7585ecfe10ad2780551b}{bool {\bfseries create\-\_\-shortcut\-\_\-array} (unsigned int num\-\_\-layers, const unsigned int $\ast$layers)}\label{class_f_a_n_n_1_1neural__net_af25565fd427d7585ecfe10ad2780551b}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ad4848876abc25f6e0fee3c6efc901fa3}{fann\-\_\-type $\ast$ {\bfseries run} (fann\-\_\-type $\ast$input)}\label{class_f_a_n_n_1_1neural__net_ad4848876abc25f6e0fee3c6efc901fa3}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a567a6daa3b234d5a8d12d86953391836}{void {\bfseries randomize\-\_\-weights} (fann\-\_\-type min\-\_\-weight, fann\-\_\-type max\-\_\-weight)}\label{class_f_a_n_n_1_1neural__net_a567a6daa3b234d5a8d12d86953391836}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a07ffec56874eb4cd866075ebcbb7ede3}{void {\bfseries init\-\_\-weights} (const \hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data)}\label{class_f_a_n_n_1_1neural__net_a07ffec56874eb4cd866075ebcbb7ede3}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a5ea5f8825a83930cd6f7d76c992ce6d5}{void {\bfseries print\-\_\-connections} ()}\label{class_f_a_n_n_1_1neural__net_a5ea5f8825a83930cd6f7d76c992ce6d5}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a9209c58df21a617fa52ccd20736403b6}{bool {\bfseries create\-\_\-from\-\_\-file} (const std\-::string \&configuration\-\_\-file)}\label{class_f_a_n_n_1_1neural__net_a9209c58df21a617fa52ccd20736403b6}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ad6ef58fbca65f2c3599d3eab270114dc}{bool {\bfseries save} (const std\-::string \&configuration\-\_\-file)}\label{class_f_a_n_n_1_1neural__net_ad6ef58fbca65f2c3599d3eab270114dc}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a6c8fbefbfe3727334449438bbd64d28e}{int {\bfseries save\-\_\-to\-\_\-fixed} (const std\-::string \&configuration\-\_\-file)}\label{class_f_a_n_n_1_1neural__net_a6c8fbefbfe3727334449438bbd64d28e}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa8c8c498d982e6439cd770480ae5e0a0}{void {\bfseries train} (fann\-\_\-type $\ast$input, fann\-\_\-type $\ast$desired\-\_\-output)}\label{class_f_a_n_n_1_1neural__net_aa8c8c498d982e6439cd770480ae5e0a0}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a3f8ed14311b11acc888d450f279f09e3}{float {\bfseries train\-\_\-epoch} (const \hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data)}\label{class_f_a_n_n_1_1neural__net_a3f8ed14311b11acc888d450f279f09e3}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a77a3d30f7ab3c8d2b57a5e1592fd1c9e}{void {\bfseries train\-\_\-on\-\_\-data} (const \hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data, unsigned int max\-\_\-epochs, unsigned int epochs\-\_\-between\-\_\-reports, float desired\-\_\-error)}\label{class_f_a_n_n_1_1neural__net_a77a3d30f7ab3c8d2b57a5e1592fd1c9e}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ab553f9f921497ff44a77f76ac5a52881}{void {\bfseries train\-\_\-on\-\_\-file} (const std\-::string \&filename, unsigned int max\-\_\-epochs, unsigned int epochs\-\_\-between\-\_\-reports, float desired\-\_\-error)}\label{class_f_a_n_n_1_1neural__net_ab553f9f921497ff44a77f76ac5a52881}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ad8507a32ff624df0f3b141f1063cadc9}{fann\-\_\-type $\ast$ {\bfseries test} (fann\-\_\-type $\ast$input, fann\-\_\-type $\ast$desired\-\_\-output)}\label{class_f_a_n_n_1_1neural__net_ad8507a32ff624df0f3b141f1063cadc9}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a347fbf2d6137297959a5aab7a013f141}{float {\bfseries test\-\_\-data} (const \hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data)}\label{class_f_a_n_n_1_1neural__net_a347fbf2d6137297959a5aab7a013f141}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a2b54992b5610f7deece961cd5d9348e7}{float {\bfseries get\-\_\-\-M\-S\-E} ()}\label{class_f_a_n_n_1_1neural__net_a2b54992b5610f7deece961cd5d9348e7}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a0180935283849e7e505d2d4399d2e3e2}{void {\bfseries reset\-\_\-\-M\-S\-E} ()}\label{class_f_a_n_n_1_1neural__net_a0180935283849e7e505d2d4399d2e3e2}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a71f3364c281e0a540daafb37a8be2be6}{void {\bfseries set\-\_\-callback} (callback\-\_\-type callback, void $\ast$user\-\_\-data)}\label{class_f_a_n_n_1_1neural__net_a71f3364c281e0a540daafb37a8be2be6}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_accc18214ab34354b34c0d6189223e66f}{void {\bfseries print\-\_\-parameters} ()}\label{class_f_a_n_n_1_1neural__net_accc18214ab34354b34c0d6189223e66f}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a2beba7b5f6f4360bf87aa09cb096224f}{training\-\_\-algorithm\-\_\-enum {\bfseries get\-\_\-training\-\_\-algorithm} ()}\label{class_f_a_n_n_1_1neural__net_a2beba7b5f6f4360bf87aa09cb096224f}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aedd72c51bcf3a597e214bc479c797cee}{void {\bfseries set\-\_\-training\-\_\-algorithm} (training\-\_\-algorithm\-\_\-enum training\-\_\-algorithm)}\label{class_f_a_n_n_1_1neural__net_aedd72c51bcf3a597e214bc479c797cee}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a9305550096662b9d7752875ef5bd7241}{float {\bfseries get\-\_\-learning\-\_\-rate} ()}\label{class_f_a_n_n_1_1neural__net_a9305550096662b9d7752875ef5bd7241}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa2c215b29f3da96a4bdf1356d3310842}{void {\bfseries set\-\_\-learning\-\_\-rate} (float learning\-\_\-rate)}\label{class_f_a_n_n_1_1neural__net_aa2c215b29f3da96a4bdf1356d3310842}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ae63517636d516041febb59ee044b8490}{activation\-\_\-function\-\_\-enum {\bfseries get\-\_\-activation\-\_\-function} (int layer, int neuron)}\label{class_f_a_n_n_1_1neural__net_ae63517636d516041febb59ee044b8490}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a35e7b0956b10c7fb5cdac171778f4faa}{void {\bfseries set\-\_\-activation\-\_\-function} (activation\-\_\-function\-\_\-enum activation\-\_\-function, int layer, int neuron)}\label{class_f_a_n_n_1_1neural__net_a35e7b0956b10c7fb5cdac171778f4faa}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a0ddc64a87fd8791f1fdeaa642917c7b6}{void {\bfseries set\-\_\-activation\-\_\-function\-\_\-layer} (activation\-\_\-function\-\_\-enum activation\-\_\-function, int layer)}\label{class_f_a_n_n_1_1neural__net_a0ddc64a87fd8791f1fdeaa642917c7b6}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a55cb24a8956b42326d81516c8575e1a9}{void {\bfseries set\-\_\-activation\-\_\-function\-\_\-hidden} (activation\-\_\-function\-\_\-enum activation\-\_\-function)}\label{class_f_a_n_n_1_1neural__net_a55cb24a8956b42326d81516c8575e1a9}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a8e32847cb4ee1efc313a6df104685f82}{void {\bfseries set\-\_\-activation\-\_\-function\-\_\-output} (activation\-\_\-function\-\_\-enum activation\-\_\-function)}\label{class_f_a_n_n_1_1neural__net_a8e32847cb4ee1efc313a6df104685f82}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ae41c0a1622ca080f1aa981a6e9f5c64c}{fann\-\_\-type {\bfseries get\-\_\-activation\-\_\-steepness} (int layer, int neuron)}\label{class_f_a_n_n_1_1neural__net_ae41c0a1622ca080f1aa981a6e9f5c64c}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ac2c009c2496c27058a318a5d66c81233}{void {\bfseries set\-\_\-activation\-\_\-steepness} (fann\-\_\-type steepness, int layer, int neuron)}\label{class_f_a_n_n_1_1neural__net_ac2c009c2496c27058a318a5d66c81233}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a8a7b75108f04e68e22af1ad16d01ee11}{void {\bfseries set\-\_\-activation\-\_\-steepness\-\_\-layer} (fann\-\_\-type steepness, int layer)}\label{class_f_a_n_n_1_1neural__net_a8a7b75108f04e68e22af1ad16d01ee11}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa76d2101794b00f3f9505fce0891f28c}{void {\bfseries set\-\_\-activation\-\_\-steepness\-\_\-hidden} (fann\-\_\-type steepness)}\label{class_f_a_n_n_1_1neural__net_aa76d2101794b00f3f9505fce0891f28c}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a3786b596e2581a3a03300dbffc107c5d}{void {\bfseries set\-\_\-activation\-\_\-steepness\-\_\-output} (fann\-\_\-type steepness)}\label{class_f_a_n_n_1_1neural__net_a3786b596e2581a3a03300dbffc107c5d}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a11bd26afaff1367980ab96dc88c43b04}{error\-\_\-function\-\_\-enum {\bfseries get\-\_\-train\-\_\-error\-\_\-function} ()}\label{class_f_a_n_n_1_1neural__net_a11bd26afaff1367980ab96dc88c43b04}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a8c8062fdc834bc93c0272585a4419757}{void {\bfseries set\-\_\-train\-\_\-error\-\_\-function} (error\-\_\-function\-\_\-enum train\-\_\-error\-\_\-function)}\label{class_f_a_n_n_1_1neural__net_a8c8062fdc834bc93c0272585a4419757}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a3c4a1e3289a790e8e2f8dcbedf20fe61}{float {\bfseries get\-\_\-quickprop\-\_\-decay} ()}\label{class_f_a_n_n_1_1neural__net_a3c4a1e3289a790e8e2f8dcbedf20fe61}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a42a2c4ff651d0baf76ef611afb0384d4}{void {\bfseries set\-\_\-quickprop\-\_\-decay} (float quickprop\-\_\-decay)}\label{class_f_a_n_n_1_1neural__net_a42a2c4ff651d0baf76ef611afb0384d4}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a2612e82791ede59c4c67c31d2a3de843}{float {\bfseries get\-\_\-quickprop\-\_\-mu} ()}\label{class_f_a_n_n_1_1neural__net_a2612e82791ede59c4c67c31d2a3de843}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a5002ede10bb23240132dad8e4d5f5a6b}{void {\bfseries set\-\_\-quickprop\-\_\-mu} (float quickprop\-\_\-mu)}\label{class_f_a_n_n_1_1neural__net_a5002ede10bb23240132dad8e4d5f5a6b}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ad8990f3425b2f1e75e323184e77aaae4}{float {\bfseries get\-\_\-rprop\-\_\-increase\-\_\-factor} ()}\label{class_f_a_n_n_1_1neural__net_ad8990f3425b2f1e75e323184e77aaae4}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_abea0de63786b91b6a50a2b3ec1db7f7d}{void {\bfseries set\-\_\-rprop\-\_\-increase\-\_\-factor} (float rprop\-\_\-increase\-\_\-factor)}\label{class_f_a_n_n_1_1neural__net_abea0de63786b91b6a50a2b3ec1db7f7d}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a2571960b4a4b182c91554e0396f85194}{float {\bfseries get\-\_\-rprop\-\_\-decrease\-\_\-factor} ()}\label{class_f_a_n_n_1_1neural__net_a2571960b4a4b182c91554e0396f85194}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a0735aacb325f4a51c4c8aa4f80f0f73a}{void {\bfseries set\-\_\-rprop\-\_\-decrease\-\_\-factor} (float rprop\-\_\-decrease\-\_\-factor)}\label{class_f_a_n_n_1_1neural__net_a0735aacb325f4a51c4c8aa4f80f0f73a}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ae9e1381c546d6c62813d69caf5abb06c}{float {\bfseries get\-\_\-rprop\-\_\-delta\-\_\-zero} ()}\label{class_f_a_n_n_1_1neural__net_ae9e1381c546d6c62813d69caf5abb06c}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa5f02864b331a91830207f3978e91eb6}{void {\bfseries set\-\_\-rprop\-\_\-delta\-\_\-zero} (float rprop\-\_\-delta\-\_\-zero)}\label{class_f_a_n_n_1_1neural__net_aa5f02864b331a91830207f3978e91eb6}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa4f101b1a690de5b4a323e99723617f3}{float {\bfseries get\-\_\-rprop\-\_\-delta\-\_\-min} ()}\label{class_f_a_n_n_1_1neural__net_aa4f101b1a690de5b4a323e99723617f3}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa7bf52f98abce080d4f3f0ce399a85c7}{void {\bfseries set\-\_\-rprop\-\_\-delta\-\_\-min} (float rprop\-\_\-delta\-\_\-min)}\label{class_f_a_n_n_1_1neural__net_aa7bf52f98abce080d4f3f0ce399a85c7}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a989be6cb626a3f6f5864bae44dd8d6a4}{float {\bfseries get\-\_\-rprop\-\_\-delta\-\_\-max} ()}\label{class_f_a_n_n_1_1neural__net_a989be6cb626a3f6f5864bae44dd8d6a4}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_acef077dcc6a9914e2f7863960ebb33da}{void {\bfseries set\-\_\-rprop\-\_\-delta\-\_\-max} (float rprop\-\_\-delta\-\_\-max)}\label{class_f_a_n_n_1_1neural__net_acef077dcc6a9914e2f7863960ebb33da}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a7ac8e92ebef580e7401d1b19fed0bd54}{float {\bfseries get\-\_\-sarprop\-\_\-weight\-\_\-decay\-\_\-shift} ()}\label{class_f_a_n_n_1_1neural__net_a7ac8e92ebef580e7401d1b19fed0bd54}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_afacccf1b4e32857f3135ad4df44bb3d4}{void {\bfseries set\-\_\-sarprop\-\_\-weight\-\_\-decay\-\_\-shift} (float sarprop\-\_\-weight\-\_\-decay\-\_\-shift)}\label{class_f_a_n_n_1_1neural__net_afacccf1b4e32857f3135ad4df44bb3d4}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a5520cb1f28c8b34746fde7b7df010e92}{float {\bfseries get\-\_\-sarprop\-\_\-step\-\_\-error\-\_\-threshold\-\_\-factor} ()}\label{class_f_a_n_n_1_1neural__net_a5520cb1f28c8b34746fde7b7df010e92}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a90aa8749b5325168099c03a7d6efb9cc}{void {\bfseries set\-\_\-sarprop\-\_\-step\-\_\-error\-\_\-threshold\-\_\-factor} (float sarprop\-\_\-step\-\_\-error\-\_\-threshold\-\_\-factor)}\label{class_f_a_n_n_1_1neural__net_a90aa8749b5325168099c03a7d6efb9cc}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa62be1ab30eb38be64df36c82da3d246}{float {\bfseries get\-\_\-sarprop\-\_\-step\-\_\-error\-\_\-shift} ()}\label{class_f_a_n_n_1_1neural__net_aa62be1ab30eb38be64df36c82da3d246}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a2baf487092eedae7b86cfaabb1450dd7}{void {\bfseries set\-\_\-sarprop\-\_\-step\-\_\-error\-\_\-shift} (float sarprop\-\_\-step\-\_\-error\-\_\-shift)}\label{class_f_a_n_n_1_1neural__net_a2baf487092eedae7b86cfaabb1450dd7}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a33b3f6dab2868d17865dc8a61525757c}{float {\bfseries get\-\_\-sarprop\-\_\-temperature} ()}\label{class_f_a_n_n_1_1neural__net_a33b3f6dab2868d17865dc8a61525757c}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a85062857b9699a5317a0a5f0a96c4be0}{void {\bfseries set\-\_\-sarprop\-\_\-temperature} (float sarprop\-\_\-temperature)}\label{class_f_a_n_n_1_1neural__net_a85062857b9699a5317a0a5f0a96c4be0}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ad1d37cf87ced59f8c6cc1034a51ecf53}{unsigned int {\bfseries get\-\_\-num\-\_\-input} ()}\label{class_f_a_n_n_1_1neural__net_ad1d37cf87ced59f8c6cc1034a51ecf53}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a4bab42eaace2cdc1041a47de1c2b298b}{unsigned int {\bfseries get\-\_\-num\-\_\-output} ()}\label{class_f_a_n_n_1_1neural__net_a4bab42eaace2cdc1041a47de1c2b298b}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a7f1a55f856bb9c6b6bb121d63dda040d}{unsigned int {\bfseries get\-\_\-total\-\_\-neurons} ()}\label{class_f_a_n_n_1_1neural__net_a7f1a55f856bb9c6b6bb121d63dda040d}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a11a04b644984228cadb22290a01b0b3b}{unsigned int {\bfseries get\-\_\-total\-\_\-connections} ()}\label{class_f_a_n_n_1_1neural__net_a11a04b644984228cadb22290a01b0b3b}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aef5f255298fdb0e9002846207af57cf1}{network\-\_\-type\-\_\-enum {\bfseries get\-\_\-network\-\_\-type} ()}\label{class_f_a_n_n_1_1neural__net_aef5f255298fdb0e9002846207af57cf1}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a721c1f52b047d86c4c72b45383bcf9de}{float {\bfseries get\-\_\-connection\-\_\-rate} ()}\label{class_f_a_n_n_1_1neural__net_a721c1f52b047d86c4c72b45383bcf9de}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a78bd4aafadd679851bd566f27be3d8e5}{unsigned int {\bfseries get\-\_\-num\-\_\-layers} ()}\label{class_f_a_n_n_1_1neural__net_a78bd4aafadd679851bd566f27be3d8e5}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_af6cc05055ae06f83a95656ad512c1343}{void {\bfseries get\-\_\-layer\-\_\-array} (unsigned int $\ast$layers)}\label{class_f_a_n_n_1_1neural__net_af6cc05055ae06f83a95656ad512c1343}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ac0e80512d57cd8eda12c92baf71dfc4a}{void {\bfseries get\-\_\-bias\-\_\-array} (unsigned int $\ast$bias)}\label{class_f_a_n_n_1_1neural__net_ac0e80512d57cd8eda12c92baf71dfc4a}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aafb79ba887858fef174b80dcabd0c0b1}{void {\bfseries get\-\_\-connection\-\_\-array} (\hyperlink{structfann__connection}{connection} $\ast$connections)}\label{class_f_a_n_n_1_1neural__net_aafb79ba887858fef174b80dcabd0c0b1}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_adadc540cbce206195f2d3958a407c9cc}{void {\bfseries set\-\_\-weight\-\_\-array} (\hyperlink{structfann__connection}{connection} $\ast$connections, unsigned int num\-\_\-connections)}\label{class_f_a_n_n_1_1neural__net_adadc540cbce206195f2d3958a407c9cc}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a921fd8fa496af465dde709a74a8707c2}{void {\bfseries set\-\_\-weight} (unsigned int from\-\_\-neuron, unsigned int to\-\_\-neuron, fann\-\_\-type weight)}\label{class_f_a_n_n_1_1neural__net_a921fd8fa496af465dde709a74a8707c2}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a029de2713cbc7d76d57391b2fd312fe1}{float {\bfseries get\-\_\-learning\-\_\-momentum} ()}\label{class_f_a_n_n_1_1neural__net_a029de2713cbc7d76d57391b2fd312fe1}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a981da3fd4e55aed51bf34ab9e2698479}{void {\bfseries set\-\_\-learning\-\_\-momentum} (float learning\-\_\-momentum)}\label{class_f_a_n_n_1_1neural__net_a981da3fd4e55aed51bf34ab9e2698479}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a6ce6b4e64eaa9e4c8e72033d231b8f3c}{stop\-\_\-function\-\_\-enum {\bfseries get\-\_\-train\-\_\-stop\-\_\-function} ()}\label{class_f_a_n_n_1_1neural__net_a6ce6b4e64eaa9e4c8e72033d231b8f3c}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_abfa8e1b51af6e511feea49edf931f2a4}{void {\bfseries set\-\_\-train\-\_\-stop\-\_\-function} (stop\-\_\-function\-\_\-enum train\-\_\-stop\-\_\-function)}\label{class_f_a_n_n_1_1neural__net_abfa8e1b51af6e511feea49edf931f2a4}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aeeb508393d4ca6f837a05bbeeb0a36b4}{fann\-\_\-type {\bfseries get\-\_\-bit\-\_\-fail\-\_\-limit} ()}\label{class_f_a_n_n_1_1neural__net_aeeb508393d4ca6f837a05bbeeb0a36b4}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa08c181762e7399eb2ee849262700e84}{void {\bfseries set\-\_\-bit\-\_\-fail\-\_\-limit} (fann\-\_\-type bit\-\_\-fail\-\_\-limit)}\label{class_f_a_n_n_1_1neural__net_aa08c181762e7399eb2ee849262700e84}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_af5066345d84cb22f8b869c5d58fe46f8}{unsigned int {\bfseries get\-\_\-bit\-\_\-fail} ()}\label{class_f_a_n_n_1_1neural__net_af5066345d84cb22f8b869c5d58fe46f8}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aae8973a3658c7e7b51087408f46c3596}{void {\bfseries cascadetrain\-\_\-on\-\_\-data} (const \hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data, unsigned int max\-\_\-neurons, unsigned int neurons\-\_\-between\-\_\-reports, float desired\-\_\-error)}\label{class_f_a_n_n_1_1neural__net_aae8973a3658c7e7b51087408f46c3596}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a9e567c4d3a54e3f02377c5f974252662}{void {\bfseries cascadetrain\-\_\-on\-\_\-file} (const std\-::string \&filename, unsigned int max\-\_\-neurons, unsigned int neurons\-\_\-between\-\_\-reports, float desired\-\_\-error)}\label{class_f_a_n_n_1_1neural__net_a9e567c4d3a54e3f02377c5f974252662}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa35a509b8843265fb7261222edb8b175}{float {\bfseries get\-\_\-cascade\-\_\-output\-\_\-change\-\_\-fraction} ()}\label{class_f_a_n_n_1_1neural__net_aa35a509b8843265fb7261222edb8b175}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_abf806c18176e9e8ff0e59c39fa1c504c}{void {\bfseries set\-\_\-cascade\-\_\-output\-\_\-change\-\_\-fraction} (float cascade\-\_\-output\-\_\-change\-\_\-fraction)}\label{class_f_a_n_n_1_1neural__net_abf806c18176e9e8ff0e59c39fa1c504c}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ab593ed32338fe6ee1ac9e8328b9bce2d}{unsigned int {\bfseries get\-\_\-cascade\-\_\-output\-\_\-stagnation\-\_\-epochs} ()}\label{class_f_a_n_n_1_1neural__net_ab593ed32338fe6ee1ac9e8328b9bce2d}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aaaa62d62fdc9803ef51da1b0c7f37e53}{void {\bfseries set\-\_\-cascade\-\_\-output\-\_\-stagnation\-\_\-epochs} (unsigned int cascade\-\_\-output\-\_\-stagnation\-\_\-epochs)}\label{class_f_a_n_n_1_1neural__net_aaaa62d62fdc9803ef51da1b0c7f37e53}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a2a4a4a00a589e02e50724edb3ec65889}{float {\bfseries get\-\_\-cascade\-\_\-candidate\-\_\-change\-\_\-fraction} ()}\label{class_f_a_n_n_1_1neural__net_a2a4a4a00a589e02e50724edb3ec65889}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a5eaeb5bc6b2f9d13e21773d0e61c8693}{void {\bfseries set\-\_\-cascade\-\_\-candidate\-\_\-change\-\_\-fraction} (float cascade\-\_\-candidate\-\_\-change\-\_\-fraction)}\label{class_f_a_n_n_1_1neural__net_a5eaeb5bc6b2f9d13e21773d0e61c8693}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a457c2b62099b52a5fcb7c389be9b7f26}{unsigned int {\bfseries get\-\_\-cascade\-\_\-candidate\-\_\-stagnation\-\_\-epochs} ()}\label{class_f_a_n_n_1_1neural__net_a457c2b62099b52a5fcb7c389be9b7f26}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a216a7b63c5d536d90f0e6c38632025e4}{void {\bfseries set\-\_\-cascade\-\_\-candidate\-\_\-stagnation\-\_\-epochs} (unsigned int cascade\-\_\-candidate\-\_\-stagnation\-\_\-epochs)}\label{class_f_a_n_n_1_1neural__net_a216a7b63c5d536d90f0e6c38632025e4}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_af1e74938f04176668d78d65b6214d9bb}{fann\-\_\-type {\bfseries get\-\_\-cascade\-\_\-weight\-\_\-multiplier} ()}\label{class_f_a_n_n_1_1neural__net_af1e74938f04176668d78d65b6214d9bb}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_af99a0bf4dcdb1095af7230c424028132}{void {\bfseries set\-\_\-cascade\-\_\-weight\-\_\-multiplier} (fann\-\_\-type cascade\-\_\-weight\-\_\-multiplier)}\label{class_f_a_n_n_1_1neural__net_af99a0bf4dcdb1095af7230c424028132}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_afe52986e8cb4459a61a8e1700789ea83}{fann\-\_\-type {\bfseries get\-\_\-cascade\-\_\-candidate\-\_\-limit} ()}\label{class_f_a_n_n_1_1neural__net_afe52986e8cb4459a61a8e1700789ea83}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a3af48b722d197dc029ad3244bf0e114a}{void {\bfseries set\-\_\-cascade\-\_\-candidate\-\_\-limit} (fann\-\_\-type cascade\-\_\-candidate\-\_\-limit)}\label{class_f_a_n_n_1_1neural__net_a3af48b722d197dc029ad3244bf0e114a}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a68668ab39dfb5f2b10c6199adce33e83}{unsigned int {\bfseries get\-\_\-cascade\-\_\-max\-\_\-out\-\_\-epochs} ()}\label{class_f_a_n_n_1_1neural__net_a68668ab39dfb5f2b10c6199adce33e83}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a9bdb9b81ba4749fe7a38aa059473b4a7}{void {\bfseries set\-\_\-cascade\-\_\-max\-\_\-out\-\_\-epochs} (unsigned int cascade\-\_\-max\-\_\-out\-\_\-epochs)}\label{class_f_a_n_n_1_1neural__net_a9bdb9b81ba4749fe7a38aa059473b4a7}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a3fb9ae30ecd2269f0e4d73c550072681}{unsigned int {\bfseries get\-\_\-cascade\-\_\-max\-\_\-cand\-\_\-epochs} ()}\label{class_f_a_n_n_1_1neural__net_a3fb9ae30ecd2269f0e4d73c550072681}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ab8af0846bc41ea2ff0d5e60ba9f89c18}{void {\bfseries set\-\_\-cascade\-\_\-max\-\_\-cand\-\_\-epochs} (unsigned int cascade\-\_\-max\-\_\-cand\-\_\-epochs)}\label{class_f_a_n_n_1_1neural__net_ab8af0846bc41ea2ff0d5e60ba9f89c18}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ac86d7b703486f7d4e818bcae0f447f9d}{unsigned int {\bfseries get\-\_\-cascade\-\_\-num\-\_\-candidates} ()}\label{class_f_a_n_n_1_1neural__net_ac86d7b703486f7d4e818bcae0f447f9d}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_abf328d3786fff1a01568a78a6d262d07}{unsigned int {\bfseries get\-\_\-cascade\-\_\-activation\-\_\-functions\-\_\-count} ()}\label{class_f_a_n_n_1_1neural__net_abf328d3786fff1a01568a78a6d262d07}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a610b249274785bb10ad240a0befbe3ae}{activation\-\_\-function\-\_\-enum $\ast$ {\bfseries get\-\_\-cascade\-\_\-activation\-\_\-functions} ()}\label{class_f_a_n_n_1_1neural__net_a610b249274785bb10ad240a0befbe3ae}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a8b860dbed58a2d6c1e486d53014849ab}{void {\bfseries set\-\_\-cascade\-\_\-activation\-\_\-functions} (activation\-\_\-function\-\_\-enum $\ast$cascade\-\_\-activation\-\_\-functions, unsigned int cascade\-\_\-activation\-\_\-functions\-\_\-count)}\label{class_f_a_n_n_1_1neural__net_a8b860dbed58a2d6c1e486d53014849ab}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a7fe58e62a0b4a5727bb2d01020befc22}{unsigned int {\bfseries get\-\_\-cascade\-\_\-activation\-\_\-steepnesses\-\_\-count} ()}\label{class_f_a_n_n_1_1neural__net_a7fe58e62a0b4a5727bb2d01020befc22}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ac9dcb36436c026df46f8dfebd20bccdf}{fann\-\_\-type $\ast$ {\bfseries get\-\_\-cascade\-\_\-activation\-\_\-steepnesses} ()}\label{class_f_a_n_n_1_1neural__net_ac9dcb36436c026df46f8dfebd20bccdf}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a2ea7981e62b3dfb1e26e15d0bb98c274}{void {\bfseries set\-\_\-cascade\-\_\-activation\-\_\-steepnesses} (fann\-\_\-type $\ast$cascade\-\_\-activation\-\_\-steepnesses, unsigned int cascade\-\_\-activation\-\_\-steepnesses\-\_\-count)}\label{class_f_a_n_n_1_1neural__net_a2ea7981e62b3dfb1e26e15d0bb98c274}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ae613c6405abe7a17a0e6c366389af963}{unsigned int {\bfseries get\-\_\-cascade\-\_\-num\-\_\-candidate\-\_\-groups} ()}\label{class_f_a_n_n_1_1neural__net_ae613c6405abe7a17a0e6c366389af963}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_afa05bba1a0fa54c6311abcff38b59b47}{void {\bfseries set\-\_\-cascade\-\_\-num\-\_\-candidate\-\_\-groups} (unsigned int cascade\-\_\-num\-\_\-candidate\-\_\-groups)}\label{class_f_a_n_n_1_1neural__net_afa05bba1a0fa54c6311abcff38b59b47}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ad95c6a2396bfca111636a3326ed18660}{void {\bfseries scale\-\_\-train} (\hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data)}\label{class_f_a_n_n_1_1neural__net_ad95c6a2396bfca111636a3326ed18660}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a23b64232f441a4b965720d848cc94f57}{void {\bfseries descale\-\_\-train} (\hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data)}\label{class_f_a_n_n_1_1neural__net_a23b64232f441a4b965720d848cc94f57}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a423c16c25970d52036c0fddf8755a7e9}{bool {\bfseries set\-\_\-input\-\_\-scaling\-\_\-params} (const \hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data, float new\-\_\-input\-\_\-min, float new\-\_\-input\-\_\-max)}\label{class_f_a_n_n_1_1neural__net_a423c16c25970d52036c0fddf8755a7e9}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a44b37d1697e57dfa61ded35bbba1d099}{bool {\bfseries set\-\_\-output\-\_\-scaling\-\_\-params} (const \hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data, float new\-\_\-output\-\_\-min, float new\-\_\-output\-\_\-max)}\label{class_f_a_n_n_1_1neural__net_a44b37d1697e57dfa61ded35bbba1d099}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a369029383d9950704728862138bed5fd}{bool {\bfseries set\-\_\-scaling\-\_\-params} (const \hyperlink{class_f_a_n_n_1_1training__data}{training\-\_\-data} \&data, float new\-\_\-input\-\_\-min, float new\-\_\-input\-\_\-max, float new\-\_\-output\-\_\-min, float new\-\_\-output\-\_\-max)}\label{class_f_a_n_n_1_1neural__net_a369029383d9950704728862138bed5fd}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a85c82f959815706ea5a19d942afb5848}{bool {\bfseries clear\-\_\-scaling\-\_\-params} ()}\label{class_f_a_n_n_1_1neural__net_a85c82f959815706ea5a19d942afb5848}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_af04c87cf48c180cd767cdf9ef7c92bb5}{void {\bfseries scale\-\_\-input} (fann\-\_\-type $\ast$input\-\_\-vector)}\label{class_f_a_n_n_1_1neural__net_af04c87cf48c180cd767cdf9ef7c92bb5}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a026b995bf825e700f79fcf561f2d72f5}{void {\bfseries scale\-\_\-output} (fann\-\_\-type $\ast$output\-\_\-vector)}\label{class_f_a_n_n_1_1neural__net_a026b995bf825e700f79fcf561f2d72f5}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a699bb92a29585ed6f37a8616b40b3707}{void {\bfseries descale\-\_\-input} (fann\-\_\-type $\ast$input\-\_\-vector)}\label{class_f_a_n_n_1_1neural__net_a699bb92a29585ed6f37a8616b40b3707}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_af5b2068df164d303a65f7958149b4821}{void {\bfseries descale\-\_\-output} (fann\-\_\-type $\ast$output\-\_\-vector)}\label{class_f_a_n_n_1_1neural__net_af5b2068df164d303a65f7958149b4821}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aecec12b7707a082feb73abf277ae379b}{void {\bfseries set\-\_\-error\-\_\-log} (F\-I\-L\-E $\ast$log\-\_\-file)}\label{class_f_a_n_n_1_1neural__net_aecec12b7707a082feb73abf277ae379b}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_aa1e2b4f9abbd890281b08e7cc1119576}{unsigned int {\bfseries get\-\_\-errno} ()}\label{class_f_a_n_n_1_1neural__net_aa1e2b4f9abbd890281b08e7cc1119576}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_ab40db30df0e46460c1881b59bced410b}{void {\bfseries reset\-\_\-errno} ()}\label{class_f_a_n_n_1_1neural__net_ab40db30df0e46460c1881b59bced410b}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a3b05f5c87a6f5c5d0183b7af635df328}{void {\bfseries reset\-\_\-errstr} ()}\label{class_f_a_n_n_1_1neural__net_a3b05f5c87a6f5c5d0183b7af635df328}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a972fdcc73ebf2eaf1e08150d111657f3}{std\-::string {\bfseries get\-\_\-errstr} ()}\label{class_f_a_n_n_1_1neural__net_a972fdcc73ebf2eaf1e08150d111657f3}
+
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a9a730e84612c38a637f04bf983e4f0b4}{void {\bfseries print\-\_\-error} ()}\label{class_f_a_n_n_1_1neural__net_a9a730e84612c38a637f04bf983e4f0b4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_f_a_n_n_1_1neural__net_a60ab18d51ec4e596492b753d4d6d2ebf}{struct \hyperlink{structfann}{fann} $\ast$ {\bfseries ann}}\label{class_f_a_n_n_1_1neural__net_a60ab18d51ec4e596492b753d4d6d2ebf}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/brian/source/\-N\-A\-R\-X\-\_\-\-Net/thridparty/fann/include/fann\-\_\-cpp.\-h\end{DoxyCompactItemize}

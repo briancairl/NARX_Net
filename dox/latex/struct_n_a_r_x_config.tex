@@ -1,0 +1,52 @@
+\hypertarget{struct_n_a_r_x_config}{\section{N\-A\-R\-X\-Config Struct Reference}
+\label{struct_n_a_r_x_config}\index{N\-A\-R\-X\-Config@{N\-A\-R\-X\-Config}}
+}
+
+
+Standard N\-A\-R\-X network setup structure.  
+
+
+
+
+{\ttfamily \#include $<$narxnet.\-h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_n_a_r_x_config_aa4b2d55a4fed85c80032bf017c399777}{offset\-\_\-t \hyperlink{struct_n_a_r_x_config_aa4b2d55a4fed85c80032bf017c399777}{input\-\_\-len}}\label{struct_n_a_r_x_config_aa4b2d55a4fed85c80032bf017c399777}
+
+\begin{DoxyCompactList}\small\item\em length of a unit-\/input block, \mbox{[}O\mbox{]} \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_config_aa25870e43cd5b7e8dae7e6533ca1c905}{offset\-\_\-t \hyperlink{struct_n_a_r_x_config_aa25870e43cd5b7e8dae7e6533ca1c905}{output\-\_\-len}}\label{struct_n_a_r_x_config_aa25870e43cd5b7e8dae7e6533ca1c905}
+
+\begin{DoxyCompactList}\small\item\em length of a unit-\/output block, \mbox{[}U\mbox{]} \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_config_a756f35a3700e4cb0b63480cf0e9bfbcb}{offset\-\_\-t \hyperlink{struct_n_a_r_x_config_a756f35a3700e4cb0b63480cf0e9bfbcb}{order}}\label{struct_n_a_r_x_config_a756f35a3700e4cb0b63480cf0e9bfbcb}
+
+\begin{DoxyCompactList}\small\item\em number of delay input-\/layer delays \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_config_ad7f9aa9b987e241cfa5ccd5c7861168c}{offset\-\_\-t \hyperlink{struct_n_a_r_x_config_ad7f9aa9b987e241cfa5ccd5c7861168c}{n\-\_\-hidden\-\_\-layers}}\label{struct_n_a_r_x_config_ad7f9aa9b987e241cfa5ccd5c7861168c}
+
+\begin{DoxyCompactList}\small\item\em Strictly \-: \{1 or 2\}. \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_config_a8a38012ca4422f62008ad05da77b382f}{offset\-\_\-t \hyperlink{struct_n_a_r_x_config_a8a38012ca4422f62008ad05da77b382f}{hidden\-\_\-len\-\_\-1}}\label{struct_n_a_r_x_config_a8a38012ca4422f62008ad05da77b382f}
+
+\begin{DoxyCompactList}\small\item\em Length of first hidden layer. \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_config_a34fc9269581d504ba0716c82c2691539}{offset\-\_\-t \hyperlink{struct_n_a_r_x_config_a34fc9269581d504ba0716c82c2691539}{hidden\-\_\-len\-\_\-2}}\label{struct_n_a_r_x_config_a34fc9269581d504ba0716c82c2691539}
+
+\begin{DoxyCompactList}\small\item\em Length of first hidden layer. \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_config_a574116e6baecef6f3d011f2838fa5f2d}{float\-\_\-t \hyperlink{struct_n_a_r_x_config_a574116e6baecef6f3d011f2838fa5f2d}{weight\-\_\-init}}\label{struct_n_a_r_x_config_a574116e6baecef6f3d011f2838fa5f2d}
+
+\begin{DoxyCompactList}\small\item\em Defines value range of weights on init. \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_config_afab32104552870cd8e59c973cdea87c1}{float\-\_\-t \hyperlink{struct_n_a_r_x_config_afab32104552870cd8e59c973cdea87c1}{learning\-\_\-rate\-\_\-init}}\label{struct_n_a_r_x_config_afab32104552870cd8e59c973cdea87c1}
+
+\begin{DoxyCompactList}\small\item\em Defines learning rate on init. \end{DoxyCompactList}\item 
+\hypertarget{struct_n_a_r_x_config_af0770f07391fa49b8e0bcfce44876fe6}{float\-\_\-t \hyperlink{struct_n_a_r_x_config_af0770f07391fa49b8e0bcfce44876fe6}{momentum\-\_\-init}}\label{struct_n_a_r_x_config_af0770f07391fa49b8e0bcfce44876fe6}
+
+\begin{DoxyCompactList}\small\item\em Defines learning momentum on init. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Standard N\-A\-R\-X network setup structure. 
+
+For proper network config, all available fields must be set before N\-A\-R\-X\-Net\-\_\-\-Create(...) is called. 
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/brian/source/\-N\-A\-R\-X\-\_\-\-Net/include/narxnet/narxnet.\-h\end{DoxyCompactItemize}
